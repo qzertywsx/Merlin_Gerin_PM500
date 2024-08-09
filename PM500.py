@@ -16,7 +16,6 @@ class PM500:
 		self.unit_id = unit_id
 		self.currentScale = currentScale
 		self.client = ModbusClient(port=self.port, baudrate=self.baudrate)
-		print(self.client)
 
 	def __str__(self):
 		return "PM500 port: " + self.port + ", baudrate: " + str(self.baudrate) + ", unit_id: " + str(self.unit_id) + ", Connected: " + str(self.client.connected)
