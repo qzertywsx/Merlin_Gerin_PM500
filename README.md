@@ -53,7 +53,7 @@ Cosfi: 0.897
 
 ```
 Reset all the statistics:
-```
+```python
 from PM500 import PM500
 
 pm500 = PM500(port='/dev/ttyACM2', baudrate=19200, unit_id=1, currentScale=1/5)
